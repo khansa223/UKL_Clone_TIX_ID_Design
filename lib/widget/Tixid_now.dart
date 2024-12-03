@@ -80,6 +80,7 @@ class Tixnow extends StatelessWidget {
                                 TextTIXNow[index],
                                 
                                 overflow: TextOverflow.clip,
+                                style: TextStyle(color: Colors.white),
                               
                                 
                                

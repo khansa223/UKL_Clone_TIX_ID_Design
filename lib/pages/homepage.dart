@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:tix_id/button/menubutton.dart';
 import 'package:tix_id/widget/Tixid_now.dart';
+import 'package:tix_id/widget/buttonpendukuung.dart';
 import 'package:tix_id/widget/foryoucardsLayout.dart';
 import 'package:tix_id/widget/movielistbuilder.dart';
 import 'package:tix_id/widget/topics.dart';
@@ -100,6 +101,7 @@ class homepage extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
                     child: Column(
                       children: [
+                       
                         Text(
                           'Sedang Tayang',
                           style: TextStyle(
@@ -108,6 +110,7 @@ class homepage extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
+                        ButtonPendukung(),
                       ],
                     ),
                   ),

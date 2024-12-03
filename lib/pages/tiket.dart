@@ -7,12 +7,12 @@ class Ticket extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     backgroundColor: Colors.black,
+      backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
           "Film Bioskop",
-          style: TextStyle(color: Colors.yellow,fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.bold),
         ),
       ),
       body: DefaultTabController(
@@ -100,7 +100,9 @@ class Ticket extends StatelessWidget {
                     Text(
                       movies[index]['title']!,
                       style: const TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 16),
+                          color: Colors.white, // Ubah warna ke putih
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16),
                     ),
                     const SizedBox(height: 5),
                     Row(
@@ -118,8 +120,7 @@ class Ticket extends StatelessWidget {
                         const SizedBox(width: 5),
                         Text(
                           movies[index]['genre']!,
-                          style:
-                              const TextStyle(color: Colors.grey, fontSize: 12),
+                          style: const TextStyle(color: Colors.grey, fontSize: 12),
                         ),
                       ],
                     ),
@@ -207,7 +208,9 @@ class Ticket extends StatelessWidget {
                     Text(
                       movies[index]['title']!,
                       style: const TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 16),
+                          color: Colors.white, // Ubah warna ke putih
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16),
                     ),
                     const SizedBox(height: 5),
                     Row(
@@ -219,14 +222,14 @@ class Ticket extends StatelessWidget {
                               borderRadius: BorderRadius.circular(5)),
                           child: const Text(
                             "R13+",
-                            style: TextStyle(fontSize: 12),
+                            style:
+                                TextStyle(color: Colors.yellow, fontSize: 12),
                           ),
                         ),
                         const SizedBox(width: 5),
                         Text(
                           movies[index]['genre']!,
-                          style:
-                              const TextStyle(color: Colors.grey, fontSize: 12),
+                          style: const TextStyle(color: Colors.grey, fontSize: 12),
                         ),
                       ],
                     ),
